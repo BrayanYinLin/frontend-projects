@@ -1,0 +1,20 @@
+{
+  "name": "contact-page",
+  "version": "1.0.0",
+  "description": "Contact Page for devChallenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "keywords": [],
+  "author": "Brayan Yin Lin",
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "^17.1.0",
+    "tailwindcss": "^3.4.3"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+}

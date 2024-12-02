@@ -1,0 +1,22 @@
+{
+  "name": "testimonial-page",
+  "version": "1.0.0",
+  "description": "A testimonial page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "keywords": ["Tailwind", "CSS", "HTML"],
+  "author": "Brayan Yin Lin",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+}

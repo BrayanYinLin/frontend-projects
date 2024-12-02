@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./src/favicon/book.png" type="image/x-icon">
+  <link rel="stylesheet" href="./src/output.css">
+  <title>Random Quote</title>
+</head>
+<body class="bg-midnightUI font-outfit">
+  <main class="min-h-screen max-w-full flex flex-col justify-center items-center gap-[32px] mx-[72px]">
+    <article class="min-h-[200px] w-[80%] lg:w-[50%] xl:w-[45%] p-6 bg-darkGrayUI bg-no-repeat bg-lines bg-cover rounded-2xl flex flex-col items-center gap-2">
+      <!-- TITLE QUOTE -->
+      <h1 id="author" class="text-white text-lg font-semibold"></h1>
+      <!-- LABEL QUOTE -->
+      <div id="tags" class="flex gap-2">
+      </div>
+      <!-- QUOTE -->
+      <p id="quote" class="text-lightGrayUI text-2xl text-center"></p>
+    </article>
+
+    <!-- BUTTON TO NEW QUOTE AND LINK -->
+    <section class="flex">
+      <button id="generate" class="p-3 border-2 border-r border-darkGrayUI rounded-l-xl"><img src="./src/svg/Regroup.svg" alt="Regroup button" /></button>
+      <button id="copy" class="p-3 border-2 border-l border-darkGrayUI rounded-r-xl"><img src="./src/svg/link.svg" alt="Link button"></button>
+    </section>
+  </main>
+  <script src="/src/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/external-music-player-music-icongeek26-glyph-icongeek26.png" type="image/x-icon">
+  <link rel="stylesheet" href="./output.css">
+  <style>
+    #progressbar {
+      color: #C93B76 !important;
+      border-radius: 55px;
+      /* box-shadow: 0px 0px 5px #C93B76; */
+    }
+
+    #progressbar:hover {
+      cursor: pointer;
+    }
+
+    #progressbar::-webkit-progress-value {
+      /* appearance: progress-bar; */
+      background: #C93B76 !important;
+      border-radius: 55px;
+    }
+
+    #progressbar::-webkit-progress-bar{
+      background: #E5E7EB !important;
+      border-radius: 55px;
+    }
+
+    #progressbar::-moz-progress-bar {
+      
+      background: #E5E7EB !important;
+      border-radius: 55px;
+    }
+  </style>
+  <title>Music Player</title>
+</head>
+<body class="bg-oficialGradient bg-cover font-oficial">
+  <main class="min-h-screen flex justify-center mx-[78px] my-[30px]">
+    <section class="bg-darkGrayUI self-center flex flex-col p-6 pb-8 rounded-[1.8rem] xl:w-[30%] xl:h-[60%] lg:w-[40%] lg:h-[60%] md:w-[60%] md:h-[70%] sm:w-[70%] sm:h-[70%] min-[820px]:w-[50%]" id="player">
+      <img src="" alt="" class="rounded-[2rem]">
+      <audio src=""></audio>
+      <h4 id="song" class="text-whiteUI text-center text-xl pt-2"></h4>
+      <p id="author" class="text-grayUI text-center"></p>
+      <label for="progressbar" class="w-12/12 flex justify-between" id="range-time">
+        <p id="current-time" class="text-grayUI text-xs">00:00</p>
+        <p id="duration-time" class="text-grayUI text-xs">00:00</p>
+      </label>
+      <progress name="progressbar" id="progressbar" class="h-[5px] w-[100%] mt-2 shadow-[0_0_5px_0px_#C93B76]"></progress>
+      <div class="w-[100%] flex justify-center gap-3 controls mt-8">
+        <button type="button" id="back-song">
+          <img src="./src/svg/Stop_and_play_fill-1.svg" alt="Go Back Button">
+        </button>
+        <button type="button" class="bg-pinkUI p-[9px] rounded-full" id="play-song">
+          <img src="./src/svg/Play_fill.svg" alt="Go Back Button">
+        </button>
+        <button type="button" id="next-song">
+          <img src="./src/svg/Stop_and_play_fill_reverse.svg" alt="Go Back Button">
+        </button>
+      </div>
+    </section>
+  </main>
+  <script src="./src/app.mjs" type="module"></script>
+</body>
+</html>

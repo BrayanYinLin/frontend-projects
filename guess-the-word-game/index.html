@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/icons8-help-96.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css">
+    <title>Word Scramble</title>
+  </head>
+  <body class="h-screen bg-guess bg-cover bg-fixed bg-center flex justify-center items-center font-outfit">
+    <main class="h-[60%] w-[70%] sm:h-[65%] sm:w-[35%] md:w-[40%] lg:w-[35%] bg-dark rounded-2xl p-8 flex flex-col gap-6 justify-between">
+      <section class="flex flex-col gap-8">
+        <img src="/Word_Scramblle.svg" alt="Word Scramble Logo" class="w-[180px] mx-auto">
+        <p class="bg-gray w-full h-[60px] rounded-md shadow-[0_5px_0_0] shadow-midnight flex gap-3 justify-center items-center" id="wrap-word"></p>
+
+        <div class="mx-4 flex justify-between text-gray">
+          <section class="flex items-center gap-2">
+            <p id="tries" data-tries="0">Tries (0/5): </p>
+            <span class="block h-[7px] w-[7px] bg-gray rounded-full failed" data-fail="1"></span>
+            <span class="block h-[7px] w-[7px] bg-gray rounded-full failed" data-fail="2"></span>
+            <span class="block h-[7px] w-[7px] bg-gray rounded-full failed" data-fail="3"></span>
+            <span class="block h-[7px] w-[7px] bg-gray rounded-full failed" data-fail="4"></span>
+            <span class="block h-[7px] w-[7px] bg-gray rounded-full failed" data-fail="5"></span>
+          </section>
+          <section id="mistakes" class="flex items-center gap-2">
+            <p>Mistakes: </p>
+          </section>
+        </div>
+      </section>
+      <section class="flex justify-center">
+        <form id="inputs-area" class="grid grid-cols-6 gap-2">
+            
+        </form>
+      </section>
+      <section>
+        <div class="flex justify-center gap-8">
+          <button type="button" class="bg-pinkUI px-6 py-2 rounded-lg text-smoke font-semibold shadow-[0_5px_0_0] hover:shadow-[0_0_0_0] transition-all shadow-grape" id="random">Random</button>
+          <button type="button" class="bg-pinkUI px-6 py-2 rounded-lg text-smoke font-semibold shadow-[0_5px_0_0] hover:shadow-[0_0_0_0] transition-all shadow-grape" id="reset">Reset</button>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

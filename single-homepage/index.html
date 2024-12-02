@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <title>Single Homepage</title>
+</head>
+<body class="bg-skyWhite dark:bg-darkNavy p-6 px-14">
+  <header class="w-full flex justify-between">
+    <img src="./src/svg/alarado-icon-homepage.svg" class="alarado-icon" alt="Alarado Logo">
+    <nav class="hidden sm:flex sm:gap-4">
+      <a href="#" class="text-oceanBlue dark:text-skyWhite font-medium">About us</a>
+      <a href="#" class="font-medium text-bluishGray">Product</a>
+      <a href="#" class="font-medium text-bluishGray">Resource</a>
+      <a href="#" class="font-medium text-bluishGray">Contact</a>
+    </nav>
+    <button class="hidden sm:block bg-oceanBlue py-[3px] px-[3px] rounded-3xl theme-button">
+      <div class="flex gap-2">
+        <img src="./src/svg/Moon_fill_light.svg" alt="Moon icon light" class="w-6 dark:bg-skyWhite rounded-full p-1" id="moon">
+        <img src="./src/svg/Sun_fill.svg" alt="Sun icon" class="w-6 bg-skyWhite dark:bg-oceanBlue rounded-full p-1" id="sun">
+      </div>
+    </button>
+
+    <aside class="min-h-screen w-[60%] bg-fullWhite dark:bg-darkNavy fixed top-0 flex flex-col sm:hidden barra-nav">
+      <button class="block sm:hidden fixed top-3 right-5 show-menu">
+        <img src="./src/svg/menu_icon.svg" alt="Menu Icon" class="w-5">
+      </button>
+      <nav class="flex flex-col w-[100%] mt-8">
+        <a href="#" class="text-center text-3xl py-3 text-oceanBlue dark:text-skyWhite font-medium">About us</a>
+        <a href="#" class="text-center text-3xl py-3 font-medium text-bluishGray">Product</a>
+        <a href="#" class="text-center text-3xl py-3 font-medium text-bluishGray">Resource</a>
+        <a href="#" class="text-center text-3xl py-3 font-medium text-bluishGray">Contact</a>
+        <button class="w-[62px] sm:hidden bg-oceanBlue my-4 py-[3px] px-[3px] rounded-3xl theme-button-mob mx-auto">
+          <div class="flex gap-2">
+            <img src="./src/svg/Moon_fill_light.svg" alt="Moon icon light" class="w-6 dark:bg-skyWhite rounded-full p-1" id="moon-mob">
+            <img src="./src/svg/Sun_fill.svg" alt="Sun icon" class="w-6 bg-skyWhite dark:bg-oceanBlue rounded-full p-1" id="sun-mob">
+          </div>
+        </button>
+      </nav>
+    </aside>
+  </header>
+  <main class="flex gap-8 py-16 flex-col-reverse items-center xl:flex-row font-poppins">
+    <section class="w-[100%] xl:w-[50%]">
+      <span class="font-bold text-oceanBlue dark:text-skyWhite">😎  Simple way to communicate</span>
+      <h1 class="text-7xl leading-[1.2] font-black text-oceanBlue dark:text-skyWhite pb-6">Actions for Accessibility in Design</h1>
+      <p class="text-xl text-bluishGray">The fastest way to build and deploy websites with resusable components.</p>
+      <div class="flex gap-5 items-center my-6">
+        <button class="text-fullWhite text-lg font-semibold bg-realBlue py-3 px-7 rounded-xl">GET STARTED</button>
+        <a href="#" class="text-realBlue text-base font-semibold underline">Get live demo</a>
+      </div>
+      <ul class="flex gap-4">
+        <li class="flex items-center gap-3"><img src="./src/svg/Done_ring_round_fill.svg" alt="Check icon completed"><span class="text-bluishGray text-base">No credit card required</span></li>
+        <li class="flex items-center gap-3"><img src="./src/svg/Done_ring_round_fill.svg" alt="Check icon completed"><span class="text-bluishGray text-base">No software to install</span></li>
+      </ul>
+    </section>
+    <section class="w-[100%] xl:w-[50%]">
+      <img src="./src/image/hero-image-simple-homepage.png" alt="" srcset="">
+    </section>
+  </main>
+  div.right-0
+  <script src="./src/main.js"></script>
+</body>
+</html>

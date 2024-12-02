@@ -1,0 +1,23 @@
+import { API_USERS } from '../consts/keys'
+
+export const getGithub = async (user) => {
+  try {
+    const response = await fetch(`${API_USERS}${user}`) //  `${API_USERS}${user}`
+    const json = await response.json()
+
+    return json
+  } catch (error) {
+    throw new Error(`There was an error ${error}`)
+  }
+}
+
+export const getRepos = async (user) => {
+  try {
+    const res = await fetch(`${API_USERS}${user}/repos`) //  `${API_USERS}${user}/repos`
+    const json = await res.json()
+
+    return json
+  } catch (error) {
+    throw new Error(`There was an error ${error}`)
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <style>
+    select {
+      -webkit-appearance: none !important; /* Desactiva el estilo nativo de la flecha en WebKit (Safari, Chrome) */
+      -moz-appearance: none !important; /* Desactiva el estilo nativo de la flecha en Firefox */
+      appearance: none !important; /* Desactiva el estilo nativo de la flecha en otros navegadores */
+      background-image: url('./src/Expand_down.svg'); /* Cambia la imagen de fondo por tu propio icono */
+      background-repeat: no-repeat;
+      background-position: 95% center; /* Alinea el icono a la derecha */
+      padding-right: 30px !important;
+    }
+  </style>
+  <title>Contact Page</title>
+</head>
+<body class="bg-gradient-to-br from-[#AE2D5D] to-150% to-[#2A4DD0] sm:bg-bgSvg bg-cover text-whiteColor">
+  <main class="min-h-screen flex flex-col gap-8 px-6 font-oficial">
+    <header class="row-span-1 pt-4 flex flex-col gap-8 justify-center">
+      <img src="./src/contact-form-icon.svg" alt="Becv Icon" class="w-[120px] pt-1 pl-8">
+      <h1 class="text-6xl w-12/12 md:w-[590px] leading-snug font-semibold text-center self-center pt-3">Interested in our business pricing?</h1>
+      <p class="text-2xl w-4/6 md:w-[500px] text-center self-center">Fill out the form to view details and we’ll contact you as soon as possible.</p>
+    </header>
+    <form action="" class="flex flex-col gap-4 bg-grayColor bg-opacity-20 p-4 mt-[60px] mb-[80px] rounded-2xl sm:w-8/12 sm:p-8 self-center">
+      <div class="flex flex-col gap-3 sm:flex-row">
+        <label for="name" class="sm:w-6/12">
+          <p>Name</p>
+          <input type="text" id="name" name="name" placeholder="Ethan Johnson" class="text-txtColor rounded-2xl p-4 py-6 mb-4 w-[100%] font-semibold">
+        </label>
+        
+        <label for="email" class="sm:w-6/12">
+          <p>Company Email</p>
+          <input type="email" id="email" name="email" placeholder="ethan@johnson.com" class="text-txtColor rounded-2xl p-4 py-6 mb-4 w-[100%] font-semibold">
+        </label>
+        
+      </div>
+      <div class="flex flex-col gap-3 sm:flex-row">
+        <label for="employees" class="sm:w-6/12">
+          <p>Company Size</p>
+          <select name="employees" id="employees" class="text-txtColor rounded-2xl p-4 py-6 mb-4 w-[100%] font-semibold">
+            <option value="[50, 100]" selected>50 - 100 employees</option>
+            <option value="[100, 150]">100 - 150 employees</option>
+            <option value="[150, 200]">150 - 200 employees</option>
+          </select>
+        </label>
+
+        <label for="subject" class="sm:w-6/12">
+          <p>Subject</p>
+          <select name="subject" id="subject" class="text-txtColor rounded-2xl p-4 py-6 mb-4 w-[100%] font-semibold">
+            <option value="Building Landing pages" selected>Building Landing pages</option>
+            <option value="Building SPA">Building SPA</option>
+            <option value="Designing UX">Designing UX</option>
+          </select>
+        </label>
+      </div>
+      
+      <label for="message">Message</label>
+      <textarea name="msg" id="message" cols="30" rows="10" placeholder="50 - 10 employees" class="text-txtColor rounded-2xl p-4 mb-4 resize-none font-semibold">50 - 10 employees</textarea>
+
+      <button type="submit" class="text-sendButtonColor bg-whiteColor rounded-2xl p-4 mb-4 font-">Contact Sales</button>
+    </form>
+  </main>
+</body>
+</html>
